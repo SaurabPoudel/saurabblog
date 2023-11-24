@@ -1,8 +1,10 @@
-baseURL = 'https://saurabblogapp.vercel.app'
+baseURL = 'https://saurab-blog.netlify.app/'
 languageCode = 'en-us'
 title = 'Saurab Blog'
 
+paginate = 4
 [params]
+    description = "The fastest blog"
     dateFormat = "Jan 2,2006"
 
 [taxonomies]

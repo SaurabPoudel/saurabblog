@@ -1,4 +1,11 @@
-{{ define "main" }}
+{{ define "main" }} 
+{{ if eq .RelPermalink "/categories/"}} 
+{{ range $.Site.Taxonomies.categories.ByCount }}
+  <a href="/categories/{{ .Name }}">
+    # {{ .Name }} <small>({{.Count}})</small>
+  </a>
+{{end}}
+{{ else }}
 <div class="list">
   {{ range .Paginator.Pages }}
   <div class="listItem">
@@ -16,11 +23,18 @@
       </h1>
       <p class="listItemDesc">{{.Params.description}}</p>
       <div class="listItemDetail">
-        <img src="{{.Params.avatar}}" loading="lazy" alt="" class="listItemAvatar"/>
-        <span>{{ range (.GetTerms "authors")}}
-          <a href={{.Permalink}}>{{ .Name }}</a>
-          {{end}}</span>
-        <time>{{ dateFormat .Site.Params.dateFormat  .Date}}</time>
+        <img
+          src="{{.Params.avatar}}"
+          loading="lazy"
+          alt=""
+          class="listItemAvatar"
+        />
+        <span
+          >{{ range (.GetTerms "authors")}}
+          <a href="{{.Permalink}}">{{ .Name }}</a>
+          {{end}}</span
+        >
+        <time>{{ dateFormat .Site.Params.dateFormat .Date}}</time>
       </div>
       <div class="listItemCategories">
         {{ range (.GetTerms "categories") }}
@@ -31,4 +45,4 @@
   </div>
   {{ end }} {{ template "_internal/pagination.html" . }}
 </div>
-{{ end }}
+{{end}} {{ end }}
