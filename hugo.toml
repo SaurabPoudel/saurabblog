@@ -4,7 +4,7 @@ title = 'Saurab Blog'
 
 paginate = 4
 [params]
-    description = "The fastest blog"
+    description = "Blog website maintained by Saurab Poudel"
     dateFormat = "Jan 2,2006"
 
 [taxonomies]
