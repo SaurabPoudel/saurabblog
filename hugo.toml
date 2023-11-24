@@ -1,4 +1,4 @@
-baseURL = 'https://saurabblogapp.vercel.com'
+baseURL = 'https://saurabblogapp.vercel.app'
 languageCode = 'en-us'
 title = 'Saurab Blog'
 
