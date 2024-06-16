@@ -26,7 +26,7 @@ I read "the book" for the reference and examples
 - `Rc<T>`, reference counting type that enables multiple ownership
 - `Ref<T>` and `RefMut<T>`, accessed through `RefCell<T>`, a type that enforces the borrowing rules at runtime instead of compile time
 
-## Using `Box<T>` to Print to Data on the Heap
+## Using `Box<T>` to Point to Data on the Heap
 
 - allows us to store data on heap rather than stack
 - pointer to the heap data remains in stack
