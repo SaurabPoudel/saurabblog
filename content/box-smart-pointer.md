@@ -78,7 +78,7 @@ fn main() {
 
 Cons variant needs the size of an i32 plus the space to store the box's pointer data.
 
-Boxes provide only the indirection an heap allocation
-It doesn't have performance overhead
-It ensures that data are not copied but it ensures ownership
-But its an smart pointer because it implements the Deref trait, which allows Box<T> values to be treated like references. Because of Drop trait implementation, the heap data that the box is pointing to is cleaned up.
+- Boxes provide only the indirection an heap allocation
+- It doesn't have performance overhead
+- It ensures that data are not copied but it ensures ownership
+- But its an smart pointer because it implements the Deref trait, which allows Box<T> values to be treated like references. Because of Drop trait implementation, the heap data that the box is pointing to is cleaned up.
