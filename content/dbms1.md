@@ -5,7 +5,7 @@ draft = false
 description=""
 image ="/images/dbms1.jpg"
 imageBig ="/images/dbms1.jpg"
-categories= ["general,dbms"]
+categories= ["general","dbms"]
 authors= ["Saurab Poudel"]
 avatar = "/images/avatar.webp"
 +++
